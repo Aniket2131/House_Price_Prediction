@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Your House Price</title>
+    <link rel="stylesheet" href="./app.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <div class="navbar">
+            <h1>Dream House</h1>
+        </div>
+    </div>
+
+    <div class="showcase hide">
+        <div class="container">
+            <div class="container-text">
+                <h3>Purchasing Your Dream House!</h3>
+                <h2>Get Price Data on Your Finger Tip...</h2>
+                <button class="btn">Click Here</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="showcase-2">
+        <div class="container-2">
+        </div>
+        <div class="house-form">
+            <form class="form">
+                <span>Provide Some Basic Details</span>
+                <div class="inner-form-div">
+                    <h2>Area(SqFt)</h2>
+                    <input type="text" value="1000" name="uiSqft">
+                </div>
+                <div class="inner-form-div">
+                    <h2>BHK</h2>
+                    <div class="switch-field">
+                        <input type="radio" id="radio-bhk-1" value="1" name="uiBHK">
+                        <label for="radio-bhk-1">1</label>
+                        <input type="radio" id="radio-bhk-2" value="2" name="uiBHK">
+                        <label for="radio-bhk-2">2</label>
+                        <input type="radio" id="radio-bhk-3" value="3" name="uiBHK">
+                        <label for="radio-bhk-3">3</label>
+                        <input type="radio" id="radio-bhk-4" value="4" name="uiBHK">
+                        <label for="radio-bhk-4">4</label>
+                        <input type="radio" id="radio-bhk-5" value="5" name="uiBHK">
+                        <label for="radio-bhk-5">5</label>
+                    </div>
+                </div>
+                <div class="inner-form-div">
+                    <h2>Bath</h2>
+                    <div class="switch-field">
+                        <input type="radio" id="radio-bath-1" value="1" name="uibath">
+                        <label for="radio-bath-1">1</label>
+                        <input type="radio" id="radio-bath-2" value="2" name="uibath">
+                        <label for="radio-bath-2">2</label>
+                        <input type="radio" id="radio-bath-3" value="3" name="uibath">
+                        <label for="radio-bath-3">3</label>
+                        <input type="radio" id="radio-bath-4" value="4" name="uibath">
+                        <label for="radio-bath-4">4</label>
+                        <input type="radio" id="radio-bath-5" value="5" name="uibath">
+                        <label for="radio-bath-5">5</label>
+                    </div>
+                </div>
+                <div class="inner-form-div">
+                    <h2>Location</h2>
+                    <select class="location" name="" id="uiLocations">
+                        <option value="" disabled="'disabled" selected="'selected">Choose a Location</option>
+                        <option>Sachin</option>
+                    </select>
+                </div>
+            </form>
+            <button class="submit" onclick="estimatePrice()">Get Price</button>
+            <div class="result" id="uiEstimatedPrice"><h2></h2></div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
